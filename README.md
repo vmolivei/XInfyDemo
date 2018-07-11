@@ -1,1 +1,1 @@
-# XInfTest by Vic Martin
+# XInfTest
