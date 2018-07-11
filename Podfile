@@ -6,7 +6,7 @@ target 'XInfinityTest' do
   use_frameworks!
 
   # Pods for XInfinityTest
-  pod 'Alamofire'
-  pod 'Kingfisher'
+#  pod 'Alamofire'
+#  pod 'Kingfisher'
 
 end

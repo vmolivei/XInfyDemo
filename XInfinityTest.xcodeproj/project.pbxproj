@@ -132,7 +132,6 @@
 				5780836120F669B900B98A39 /* Sources */,
 				5780836220F669B900B98A39 /* Frameworks */,
 				5780836320F669B900B98A39 /* Resources */,
-				90B56944DF705A8C58129D08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,26 +189,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		90B56944DF705A8C58129D08 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-XInfinityTest/Pods-XInfinityTest-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XInfinityTest/Pods-XInfinityTest-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BF54BB2C61C30D888B4ADDBE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
