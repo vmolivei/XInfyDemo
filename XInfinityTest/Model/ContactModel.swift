@@ -8,6 +8,22 @@
 
 import Foundation
 
+struct ContactResponseJSON: Codable{
+    var RelatedTopics: [ContactJson]
+}
+
+struct ContactJson: Codable{
+    var Text: String
+    var Icon: ContactIcon
+}
+
+struct ContactIcon: Codable{
+    var URL: String
+}
+
+
 struct Contact{
-    
+    var title: String
+    var icon: String
+    var description: String
 }

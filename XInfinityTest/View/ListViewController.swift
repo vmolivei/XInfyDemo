@@ -12,7 +12,9 @@ class ListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ServerAPIHandler.shared.fetchData(path: Constants.url) {(data, error) in
+            print(data)
+        }
         // Do any additional setup after loading the view.
     }
 

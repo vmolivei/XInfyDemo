@@ -12,5 +12,5 @@ import Foundation
 
 // Constants
 struct Constants{
-    static let url = ""
+    static let url = "http://api.duckduckgo.com/?q=simpsons+characters&format=json"
 }
