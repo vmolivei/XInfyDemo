@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		574A222F20F6805400126F16 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A222E20F6805400126F16 /* ListViewController.swift */; };
+		574A223120F6806300126F16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A223020F6806300126F16 /* Constants.swift */; };
+		574A223320F6814D00126F16 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A223220F6814D00126F16 /* ContactModel.swift */; };
+		574A223520F682B900126F16 /* ServerAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574A223420F682B900126F16 /* ServerAPIHandler.swift */; };
 		5780836920F669B900B98A39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780836820F669B900B98A39 /* AppDelegate.swift */; };
-		5780836B20F669B900B98A39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780836A20F669B900B98A39 /* ViewController.swift */; };
 		5780836E20F669B900B98A39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5780836C20F669B900B98A39 /* Main.storyboard */; };
 		5780837020F669BB00B98A39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5780836F20F669BB00B98A39 /* Assets.xcassets */; };
 		5780837320F669BB00B98A39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5780837120F669BB00B98A39 /* LaunchScreen.storyboard */; };
@@ -17,9 +20,12 @@
 
 /* Begin PBXFileReference section */
 		1CABD1F15E0CEC7B105F1F92 /* Pods-XInfinityTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XInfinityTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XInfinityTest/Pods-XInfinityTest.debug.xcconfig"; sourceTree = "<group>"; };
+		574A222E20F6805400126F16 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		574A223020F6806300126F16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		574A223220F6814D00126F16 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		574A223420F682B900126F16 /* ServerAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerAPIHandler.swift; sourceTree = "<group>"; };
 		5780836520F669B900B98A39 /* XInfinityTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XInfinityTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5780836820F669B900B98A39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5780836A20F669B900B98A39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5780836D20F669B900B98A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5780836F20F669BB00B98A39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5780837220F669BB00B98A39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +46,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		574A222B20F67FCC00126F16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				574A223020F6806300126F16 /* Constants.swift */,
+				574A223220F6814D00126F16 /* ContactModel.swift */,
+				574A223420F682B900126F16 /* ServerAPIHandler.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		574A222C20F67FD100126F16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5780837120F669BB00B98A39 /* LaunchScreen.storyboard */,
+				5780836C20F669B900B98A39 /* Main.storyboard */,
+				574A222E20F6805400126F16 /* ListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		574A222D20F67FD400126F16 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		5780835C20F669B900B98A39 = {
 			isa = PBXGroup;
 			children = (
@@ -61,11 +94,11 @@
 		5780836720F669B900B98A39 /* XInfinityTest */ = {
 			isa = PBXGroup;
 			children = (
+				574A222D20F67FD400126F16 /* ViewModel */,
+				574A222C20F67FD100126F16 /* View */,
+				574A222B20F67FCC00126F16 /* Model */,
 				5780836820F669B900B98A39 /* AppDelegate.swift */,
-				5780836A20F669B900B98A39 /* ViewController.swift */,
-				5780836C20F669B900B98A39 /* Main.storyboard */,
 				5780836F20F669BB00B98A39 /* Assets.xcassets */,
-				5780837120F669BB00B98A39 /* LaunchScreen.storyboard */,
 				5780837420F669BB00B98A39 /* Info.plist */,
 			);
 			path = XInfinityTest;
@@ -99,6 +132,7 @@
 				5780836120F669B900B98A39 /* Sources */,
 				5780836220F669B900B98A39 /* Frameworks */,
 				5780836320F669B900B98A39 /* Resources */,
+				90B56944DF705A8C58129D08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +190,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		90B56944DF705A8C58129D08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XInfinityTest/Pods-XInfinityTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XInfinityTest/Pods-XInfinityTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BF54BB2C61C30D888B4ADDBE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -181,8 +235,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5780836B20F669B900B98A39 /* ViewController.swift in Sources */,
+				574A222F20F6805400126F16 /* ListViewController.swift in Sources */,
+				574A223520F682B900126F16 /* ServerAPIHandler.swift in Sources */,
 				5780836920F669B900B98A39 /* AppDelegate.swift in Sources */,
+				574A223320F6814D00126F16 /* ContactModel.swift in Sources */,
+				574A223120F6806300126F16 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +391,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Victor.XInfinityTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfinity.simpsonsviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Victor.XInfinityTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xfinity.simpsonsviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
